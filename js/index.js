@@ -9,8 +9,10 @@ if ($(window).width() < 800) {
 
 } else {
     // document.getElementsByClassName('splash')[0].style.zIndex = "200";
-    mainVideo.append("<source type='video/mp4' src='video/Logo Landscape.mp4' />");
+    mainVideo.append("<source type='video/mp4' src='video/Logo Animation Landscape.mp4' />");
 }
+
+
 
 $('video').get(0).play();
 

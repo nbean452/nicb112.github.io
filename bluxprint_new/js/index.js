@@ -1,11 +1,9 @@
 var mainVideo = $('video');
 
-console.log(window.innerWidth);
-
-if (window.innerWidth < 800) {
+if ($(window).width() < 800) {
     //   document.getElementById('video').classList.add('behind');
     //   splash.classList.add('display-none')
-    mainVideo.append("<source type='video/mp4' src='video/Logo Animation Portrait.mp4' />");
+    mainVideo.append("<source type='video/mp4' src='video/Logo Animation Portrait).mp4' />");
     // document.getElementsByClassName('splash')[0].style.display = "none";
     // document.getElementsByClassName('splash').style.zIndex = "-10";
 
@@ -13,8 +11,6 @@ if (window.innerWidth < 800) {
     // document.getElementsByClassName('splash')[0].style.zIndex = "200";
     mainVideo.append("<source type='video/mp4' src='video/Logo Animation Landscape.mp4' />");
 }
-
-
 
 // $('video').get(0).play();
 

@@ -34,6 +34,10 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
   }
+  
+#mobile{
+    display: none;
+}
 
 .display-none{
     z-index: -10;
@@ -163,6 +167,14 @@ h1{
 @media screen and (max-width: 800px) {
     .right-container, #credits{
         display: none;
+    }
+
+    #desktop{
+        display: none;
+    }
+
+    #mobile{
+        display: block;
     }
 
     //TODO

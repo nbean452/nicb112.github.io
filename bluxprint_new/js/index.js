@@ -14,7 +14,7 @@ if ($(window).width() < 800) {
 
 
 
-$('video').get(0).play();
+// $('video').get(0).play();
 
 var video = document.querySelector('.splash-animation');
 var splash = document.querySelector('.splash');

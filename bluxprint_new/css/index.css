@@ -192,6 +192,11 @@ h1 {
         -ms-flex-align: center;
             align-items: center;
     margin: auto;
+    background-color: red;
+  }
+  video {
+    width: auto;
+    height: inherit;
   }
   .left-container {
     width: 100vw;

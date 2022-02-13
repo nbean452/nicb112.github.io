@@ -12,9 +12,7 @@ if ($(window).width() < 800) {
     mainVideo.append("<source type='video/mp4' src='video/Logo Animation.mp4' />");
 }
 
-
-
-$('video').get(0).play();
+// $('video').get(0).play();
 
 var video = document.querySelector('.splash-animation');
 var splash = document.querySelector('.splash');

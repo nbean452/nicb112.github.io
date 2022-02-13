@@ -1,5 +1,7 @@
 var mainVideo = $('video');
 
+console.log(window.innerWidth);
+
 if (window.innerWidth < 800) {
     //   document.getElementById('video').classList.add('behind');
     //   splash.classList.add('display-none')

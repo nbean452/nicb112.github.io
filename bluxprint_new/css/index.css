@@ -32,6 +32,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  z-index: 201;
 }
 
 .display-none {
@@ -192,10 +193,6 @@ h1 {
         -ms-flex-align: center;
             align-items: center;
     margin: auto;
-  }
-  video {
-    width: auto;
-    height: inherit;
   }
   .left-container {
     width: 100vw;

@@ -1,6 +1,6 @@
 var mainVideo = $('video');
 
-if ($(window).width() < 800) {
+if (window.innerWidth < 800) {
     //   document.getElementById('video').classList.add('behind');
     //   splash.classList.add('display-none')
     mainVideo.append("<source type='video/mp4' src='video/Logo Animation Portrait.mp4' />");

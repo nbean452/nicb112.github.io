@@ -1,6 +1,7 @@
 var splashAnimation = document.querySelector('#splash-animation');
 var splash = document.querySelector('.splash');
 
+//when splash animation ends, calls another function to hide the splash animation
 splashAnimation.addEventListener("animationend", () => {
     setTimeout(fadeOutSplash, 2000);
 });
@@ -14,9 +15,7 @@ const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
 
-// const credit = document.getElementById("photographer");
-
-const releaseDate = '30 Feb 2022';
+const releaseDate = '1 Mar 2022';
 
 var curCount = releaseDate;
 
@@ -54,7 +53,6 @@ function formatTime(time) {
 
 //intial call
 countdown();
-
 
 //called every 1 second
 setInterval(countdown, 1000);

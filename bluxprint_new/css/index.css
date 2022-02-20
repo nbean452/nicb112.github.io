@@ -57,18 +57,6 @@ source {
   }
 }
 
-@-webkit-keyframes fadeOut {
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes fadeOut {
-  to {
-    opacity: 0;
-  }
-}
-
 #logo {
   max-width: 300px;
   pointer-events: none;

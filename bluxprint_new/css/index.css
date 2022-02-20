@@ -150,6 +150,7 @@ a:hover {
   width: fit-content;
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
+  line-height: 5vh;
 }
 
 #text * {

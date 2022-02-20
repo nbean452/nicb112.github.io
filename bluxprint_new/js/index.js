@@ -1,15 +1,13 @@
-var mobileVideo = document.querySelector('#mobile');
-var desktopVideo = document.querySelector('#desktop');
-
+var splashAnimation = document.querySelector('#splash-animation');
 var splash = document.querySelector('.splash');
 
-mobileVideo.onended = function (e) {
-    setTimeout(splash.classList.add('display-none'), 1500);
-};
+splashAnimation.addEventListener("animationend", () => {
+    setTimeout(fadeOutSplash, 2000);
+});
 
-desktopVideo.onended = function (e) {
-    setTimeout(splash.classList.add('display-none'), 1500);
-};
+function fadeOutSplash(){
+    splash.classList.add('display-none');
+}
 
 const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");

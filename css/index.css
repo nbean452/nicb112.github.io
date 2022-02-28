@@ -6,6 +6,16 @@
   text-align: center;
   margin: 0;
   padding: 0;
+  /* border: red 1px solid; */
+}
+
+html, body {
+  min-height: -webkit-fill-available;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 /* splash animations */
@@ -123,7 +133,7 @@ a:hover {
 }
 
 p {
-  width: 389px;
+  width: fit-content;
   height: 40px;
   margin: auto;
 
@@ -200,19 +210,19 @@ p {
   }
 
   #logo {
-    margin-top: 95px;
+    margin-top: 10vh;
   }
 
   h1 {
     font-size: 30px;
     line-height: 38px;
-    margin-top: 65px;
+    margin-top: 5vh;
     width: fit-content;
   }
 
   pre {
     width: 247px;
-    height: 146px;
+    height: 10vh;
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
@@ -221,8 +231,8 @@ p {
 
   #contacts {
     display: block;
-    width: 90%;
-    margin: 200px auto 0px auto;
+    width: 100%;
+    margin: 30vh 0px 0px 0px;
   }
 
   #social-media-links {
@@ -242,10 +252,7 @@ p {
   }
 }
 
-@media screen and (max-width: 768px) and (orientation: landscape) {
-  #container{
-    background: url("../img/Website Photo Portrait.png") no-repeat;
-  }
+@media screen and (max-width: 900px) and (orientation: landscape) {
 
   #logo {
     margin-top: 0px;
@@ -254,13 +261,13 @@ p {
   h1 {
     font-size: 28px;
     line-height: 36px;
-    margin-top: 30px;
+    margin-top: 0px;
     width: fit-content;
   }
 
   pre {
     width: 247px;
-    height: 146px;
+    height: 70px;
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
@@ -270,7 +277,7 @@ p {
   #contacts {
     display: block;
     width: 90%;
-    margin: 50px auto 0px auto;
+    margin: 30px auto 0px auto;
   }
 
   #social-media-links {

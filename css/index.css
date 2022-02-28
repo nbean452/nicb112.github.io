@@ -123,7 +123,6 @@ a:hover {
 
 #contacts p {
   margin: auto 5px;
-  background-color: aliceblue;
 }
 
 #contacts-text {
@@ -171,32 +170,42 @@ pre {
   padding: 20px;
 }
 
-#ig {
-  height: 40.819881439208984px;
-  width: 26.24135398864746px;
-}
-
 #fb {
+  margin-right: 5px;
   height: 24.78350067138672px;
   width: 27.699207305908203px;
-}
-
-#wa {
-  height: 34.98847198486328px;
-  width: 34.98847198486328px;
-}
-
-#telegram {
-  height: 41px;
-  width: 41px;
 }
 
 #twitter {
   height: 24.78350067138672px;
   width: 23.325647354125977px;
+  margin-top: 5px;
+  margin-left: 3px;
+}
+
+#ig {
+  margin-top: 4px;
+  height: 40.819881439208984px;
+  width: 26.24135398864746px;
+}
+
+#telegram {
+  margin-top: 2px;
+  margin-left: 2px;
+  height: 41px;
+  width: 41px;
+}
+
+#wa {
+  margin-top: 3px;
+  margin-left: 2px;
+  height: 34.98847198486328px;
+  width: 34.98847198486328px;
 }
 
 #email {
+  margin-top: 4px;
+  margin-left: 0.5px;
   height: 18.952089309692383px;
   width: 23.325647354125977px;
 }
@@ -204,7 +213,7 @@ pre {
 #social-media-links > div {
   width: 41px;
   height: 41px;
-  background-color: gray;
+  background-color: #414195;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,7 +227,7 @@ pre {
   margin: 15px;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  opacity: 0.5;
+  /* opacity: 0.5; */
   display: flex;
 }
 

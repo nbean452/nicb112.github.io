@@ -104,7 +104,11 @@ pre {
 }
 
 #contacts {
-  margin-top: 152px;
+  /* margin-top: 152px; */
+  position: absolute;
+  bottom: 30px;
+  width: 100% !important;
+
 }
 
 a:hover {
@@ -121,6 +125,7 @@ a:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  justify-content: center;
 }
 
 p {
@@ -195,6 +200,7 @@ p {
   backdrop-filter: blur(10px);
 }
 
+/* phone portrait */
 @media screen and (max-width: 768px) and (orientation: portrait) {
   #container{
     background: url("../img/Website Photo Portrait.png") no-repeat;
@@ -222,8 +228,6 @@ p {
 
   #contacts {
     display: block;
-    width: 100%;
-    margin: 30vh 0px 0px 0px;
   }
 
   #social-media-links {
@@ -243,6 +247,7 @@ p {
   }
 }
 
+/* phone landscape */
 @media screen and (max-width: 900px) and (orientation: landscape) {
 
   #logo {
@@ -267,7 +272,7 @@ p {
 
   #contacts {
     display: block;
-    width: 90%;
+    bottom: 0px;
     margin: 30px auto 0px auto;
   }
 
@@ -285,5 +290,18 @@ p {
     width: 30vh;
     margin-top: -15vh;
     margin-left: -15vh;
+  }
+}
+
+/* tablet view */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)  {
+  #container{
+    background: url("../img/Website Photo Portrait.png") no-repeat;
+    background-size: cover;
+  }
+
+  #contacts{
+    position: absolute;
+    bottom: 30px;
   }
 }

@@ -9,15 +9,6 @@
   /* border: red 1px solid; */
 }
 
-html, body {
-  min-height: -webkit-fill-available;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
 /* splash animations */
 
 #splash {
@@ -66,8 +57,8 @@ body {
 /* contains the whole view */
 
 #container {
-  width: 100vw;
-  height: 100vh;
+  width: 100% !important;
+  height: 100% !important;
   background: url("../img/Website Photo Landscape.png") no-repeat;
   background-size: cover;
 }

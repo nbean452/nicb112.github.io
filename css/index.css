@@ -194,8 +194,7 @@ p {
   backdrop-filter: blur(10px);
 }
 
-@media screen and (max-width: 800px) {
-
+@media screen and (max-width: 768px) and (orientation: portrait) {
   #container{
     background: url("../img/Website Photo Portrait.png") no-repeat;
   }
@@ -223,7 +222,7 @@ p {
   #contacts {
     display: block;
     width: 90%;
-    margin: 250px auto 0px auto;
+    margin: 200px auto 0px auto;
   }
 
   #social-media-links {

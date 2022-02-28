@@ -12,12 +12,12 @@
 /* splash animations */
 
 #splash {
-  background: white;
+  background: blueviolet;
   z-index: 200;
   opacity: 1;
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  width: inherit;
+  height: inherit;
   transition-duration: 1s;
 }
 

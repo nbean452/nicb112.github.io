@@ -123,6 +123,7 @@ a:hover {
 
 #contacts p {
   margin: auto 5px;
+  background-color: aliceblue;
 }
 
 #contacts-text {

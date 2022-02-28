@@ -18,11 +18,12 @@ html, body {
 
 #splash {
   background: white;
+  background-size: cover;
   z-index: 200;
   opacity: 1;
   position: absolute;
-  width: inherit;
-  height: inherit;
+  width: 100vw;
+  height: 100vh;
   transition-duration: 1s;
 }
 
@@ -66,6 +67,7 @@ html, body {
   height: 100vh;
   background: url("../img/Website Photo Landscape.png") no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 /* for "under construction" */
@@ -200,7 +202,7 @@ p {
 
 /* phone portrait */
 @media screen and (max-width: 768px) and (orientation: portrait) {
-  #container{
+  #container {
     background: url("../img/Website Photo Portrait.png") no-repeat;
   }
 
@@ -232,7 +234,7 @@ p {
     justify-content: center;
   }
 
-  #social-media-links > div {
+  #social-media-links>div {
     margin-left: 8px;
     margin-right: 8px;
   }
@@ -278,7 +280,7 @@ p {
     justify-content: center;
   }
 
-  #social-media-links > div {
+  #social-media-links>div {
     margin-left: 8px;
     margin-right: 8px;
   }
@@ -292,41 +294,47 @@ p {
 }
 
 /* tablet view */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)  {
-  #container{
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #container {
     background: url("../img/Website Photo Portrait.png") no-repeat;
     background-size: cover;
   }
 
-  #logo{
+  #logo {
     transform: scale(1.5);
   }
 
-  h1{
+  h1 {
     margin-top: 250px;
     font-size: 60px;
   }
 
-  pre{
+  pre {
     width: 80%;
     font-size: 24px;
     margin-top: 0px;
     line-height: 36px;
   }
 
-  #contacts{
+  #contacts {
     position: absolute;
     bottom: 60px;
   }
 
-  p{
+  p {
     font-size: 36px;
   }
 
-  #social-media-links > div {
+  #social-media-links>div {
     transform: scale(1.5);
     margin-top: 40px;
     margin-left: 30px;
     margin-right: 30px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  h1 {
+    font-size: 48px;
   }
 }

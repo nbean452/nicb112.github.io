@@ -60,6 +60,24 @@ ul.middle {
     width: fit-content;
 }
 
+.middle-container {
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe {
+    position: absolute;
+    margin: 10%;
+    left: 0%;
+    bottom: 0;
+}
+
+.project-img img {
+    width: 100%;
+    margin: 10px 0px;
+}
+
 .contact-container {
     display: flex;
     flex-wrap: wrap;

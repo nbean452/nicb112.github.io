@@ -5,78 +5,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="img/Logogram.png">
+    <title>Nicholas Benedict | Computing Student @ PolyU</title>
+    <link rel="icon" href="icon/syntax-logo.png">
     <link rel="stylesheet" href="css/index.css">
-    <title>Bluxprint | Coming Soon!</title>
     <script src="js/index.js" defer></script>
-    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script> -->
 </head>
 
 <body>
+    <div class="navbar">
 
-    <div id="container">
-        <div id="splash">
-            <img src="img/Text.png" alt="" id="splash-animation">
+        <div class="left">
+            <a id="home" onclick="toElement('home')">Nicholas Benedict</a>
         </div>
-    
-        <img src="img/Color XL.png" alt="Text Logo" id="logo">
-        <h1>UNDER CONSTRUCTION</h1>
-        <pre>
-            Our website is currently underway!
-            We will be back shortly.
-            Thank you for your patience.
-        </pre>
-    
-        <!-- group the buttons for easier view -->
-        <div id="contacts">
-            <div id="contacts-text">
-                <p>Stay in Touch</p>
+        <div class="center"></div>
+        <div class="right">
+            <div><a onclick="toElement(about)">About</a></div>
+            <div><a onclick="toElement(projects)">Projects</a></div>
+            <div><a onclick="toElement(contact)">Contact</a></div>
+        </div>
+    </div>
+
+    <div class="onescreen top-view">
+        <div class="prof-container">
+            <img src="img/profpic.jpeg" alt="picture of Nicholas">
+            <h1>PolyU Comp Student</h1>
+            <h2>Based in Hong Kong</h2>
+        </div>
+    </div>
+
+    <div>
+        <div class="container" id="about">
+            <div class="top distance-top">
+                <h2>About Me</h2>
+                <hr>
             </div>
-    
-            <div id="social-media-links">
-                <div>
-                    <a href="https://www.facebook.com/profile.php?id=100076552645694" target="_blank">
-                        <img src="img/facebook.png" alt="Facebook" id="fb">
-                    </a>
-    
-                </div>
-    
-                <div>
-                    <a href="https://twitter.com/bluxprint_id?s=21" target="_blank">
-                        <img src="img/twitter.png" alt="Twitter" id="twitter">
-                    </a>
-    
-                </div>
-    
-                <div>
-                    <a href="https://instagram.com/bluxprint_id?utm_medium=copy_link" target="_blank">
-                        <img src="img/ig.png" alt="Instagram" id="ig">
-                    </a>
-    
-                </div>
-    
-                <div>
-                    <a href="https://t.me/bluxprint" target="_blank">
-                        <img src="img/telegram.png" alt="Telegram" id="telegram">
-                    </a>
-    
-                </div>
-    
-                <div>
-                    <a href="https://wa.me/6281330018125" target="_blank">
-                        <img src="img/wa.png" alt="WhatsApp" id="wa">
-                    </a>
-    
-                </div>
-    
-                <div>
-                    <a href="mailto:bluxprintbluxprint@gmail.com" target="_blank">
-                        <img src="img/email.png" alt="Email" class="grayscale" id="email">
-                    </a>
-                </div>
-    
+            <div class="about">
+                <p>
+                    I have had experiences using Python, Java, C++, Ubuntu, HTML, CSS, JS. I learned these
+                    technologies
+                    from my
+                    study and courseworks in University and studying them on my own.
+                </p>
+                <p>
+                    I'm currently focusing on my web dev skills where I try to create my
+                    own projects using known web frameworks such as flask(python) and more.
+                </p>
+                <p>
+                    Recently, me and my team made an AR game named <a href="https://globalgamejam.org/2022/games/mono-1"
+                        target="_blank">Mono</a>
+                    that is about solving cubes puzzles using the player's surroundings with the use of AR
+                    technology. Our
+                    game won
+                    the "Best AR Game" award from GGJ Hong Kong 2022.
+                </p>
             </div>
         </div>
+    </div>
+
+    <div class="distance-bottom">
+        <div class="container" id="projects">
+            <div class="top distance-top">
+                <h2>My Projects</h2>
+                <hr>
+                <p>For future projects, I'm planning to make some, but not limited to this list:</p>
+                <ul class="middle">
+                    <li>
+                        <p>User chat room</p>
+                    </li>
+                    <li>
+                        <p>Remake countdown timer website that allows user to custom countdown dates</p>
+                    </li>
+                </ul>
+                <p>For more, please check my Github account down below!</p>
+                <br>
+                <iframe src="https://comp3421-punct.herokuapp.com" width="800px" height="480px"></iframe>
+                <br>
+                <hr><br>
+                <iframe src="https://art-overflow-3334.herokuapp.com" width="800px" height="480px"></iframe>
+                <br>
+                <hr><br>
+                <iframe src="countdown-timer-noheader.html" width="800px" height="480px"></iframe>
+                <br>
+                <hr><br>
+                <iframe src="bluxprint/" width="800px" height="480px"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-container" id="contact">
+        <a href="https://wa.me/6287851510678">Whatsapp</a>
+        <a href="https://github.com/nicb112">Github</a>
+        <a href="mailto:nicholasb1537@gmail.com">E-mail</a>
+
+
+        <p id="credits">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
     </div>
 
 </body>

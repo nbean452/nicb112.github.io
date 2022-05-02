@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+body {
+    background: #26243b;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    background: rgba(218, 218, 218, 0.5);
+    backdrop-filter: blur(10px);
+    /* border: black 1px solid; */
+    align-items: center;
+    margin: auto;
+}
+
+.navbar .center, .navbar .left {
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+    padding: 0.5rem;
+    /* background: blue; */
+    /* border: black 1px solid; */
+}
+
+.right {
+    display: flex;
+    /* align-items: center; */
+    margin: auto;
+}
+
+.right div {
+    padding: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#name {
+    font-size: 24px;
+
+    /* background: -webkit-linear-gradient(left,#05619b,purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.onescreen {
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+
+    background-image: url(https://images.unsplash.com/photo-1616548321627-3c1d17305545?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1168&q=80);
+    
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    min-height: 100vh;
+}
+
+.topview{
+    background: linear-gradient(50deg, #4612aa, #590cca, #ad20bf, #d25ea3, #d783ad, #db95bb, #daa1c4 );
+    background-size: 600% 600%;
+    background-position: 0% 0%;
+    animation: background-animation 10s ease-in-out infinite;
+}
+
+h1 {
+    background-color: rgba(245, 245, 220, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.countdown-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(245, 245, 220, 0.5);
+    margin: 10px 0;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.big-text {
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 2rem;
+}
+
+.countdown-el {
+    text-align: center;
+}
+
+.countdown-el span{
+    font-size: 1.5rem;
+}
+
+.credit {
+    width: 100%;
+    background-color: rgba(255, 217, 48, 0.8);
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    position: absolute;
+    bottom:0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;   
+}
+
+.credit p {
+    padding: 0px 20px;
+}
+
+.credit a {
+    color: blueviolet;
+}
+
+button {
+    margin-top: 50px;
+    cursor: pointer;
+    background: rgba(245, 245, 220, 0.5);
+    padding: 5px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: none;
+    color: darkblue;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 700;
+    transition: all 0.1s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 500px) {
+    .credit * {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+
+    .onescreen {
+        justify-content:start; 
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar .left, .navbar .right {
+        width: 100%;
+
+    }
+
+    .navbar .center {
+        position: fixed;
+        top: 0;
+        height: 0;
+        width: 0;
+    }
+
+    .right div {
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 2vw;
+    }
+
+    .big-text{
+        font-size: 6vw;
+    }
+
+    #header-el {
+        font-size: 6vw;
+    }
+    
+    .credit{
+        display: none;
+    }
+}

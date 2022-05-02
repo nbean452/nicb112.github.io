@@ -1,14 +1,18 @@
-var splashAnimation = document.getElementById("splash-animation");
-var splash = document.getElementById("splash");
+function wip(){
+    alert("currently Work In Progress! More to Come! Try clicking on the Projects!");
+}
 
-//when splash animation ends, calls another function to hide the splash animation
-splashAnimation.addEventListener("animationend", () => {
-    console.log("anim ended!");
-    
-    setTimeout(fadeOutSplash, 2000);
-});
+var home = document.getElementById("home");
+var contact = document.getElementById("contact");
+var projects = document.getElementById("projects");
+var about = document.getElementById("about");
 
-function fadeOutSplash(){
-    splash.style.zIndex = "-100";
-    splash.style.opacity = "0";
+function toElement(element){
+    if(element=="home"){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    else{
+        element.scrollIntoView({block: "start", inline: "nearest"});
+    }
 }

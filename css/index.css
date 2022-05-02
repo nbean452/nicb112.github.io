@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Space+Grotesk:wght@700&display=swap");
+
+* {
+  font-family: 'Space Grotesk', sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-width: 100vw;
+  min-height: 100vh;
+  /* overflow: hidden; */
+}
+
+/* splash animations */
+
+#splash {
+  background: white;
+  background-size: cover;
+  z-index: 200;
+  opacity: 1;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  transition-duration: 1s;
+}
+
+#splash-animation {
+  height: 15vw;
+  width: 15vw;
+  position: absolute;
+  top: 50%;
+  margin-top: -7.5vw;
+  margin-left: -7.5vw;
+  opacity: 0;
+  -webkit-animation: fadeIn 1s ease-in-out forwards;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.display-none {
+  z-index: -1;
+  opacity: 0;
+  display: none;
+
+}
+
+@-webkit-keyframes fadeIn {
+  25%{
+    transform: translate(0px,-10px);
+  }
+  50% {
+    transform: translate(0px,10px);
+  }
+  75%{
+    transform: translate(0px, -10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  25%{
+    transform: translate(0px,-10px);
+  }
+  50% {
+    transform: translate(0px,10px);
+  }
+  75%{
+    transform: translate(0px, -10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+/* end of splash animations  */
+
+/* contains the whole view */
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/Website Photo Landscape.png") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* for "under construction" */
+
+#logo {
+  margin: 20px auto;
+  width: 133px;
+  height: 64px;
+  pointer-events: none;
+}
+
+h1 {
+  width: 765px;
+  height: 91px;
+
+  margin: 117px auto 0px auto;
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 72px;
+  align-items: center;
+  text-align: center;
+}
+
+pre {
+  width: 592px;
+  white-space: pre-line;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 38px;
+  text-align: center;
+  margin: 0px auto 30px auto;
+}
+
+#contacts {
+  /* margin-top: 152px; */
+  position: absolute;
+  bottom: 30px;
+  width: 100% !important;
+
+}
+
+a:hover {
+  opacity: 0.7;
+  transition: all 0.1s ease-in-out;
+}
+
+#social-media-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  width: fit-content;
+  height: 40px;
+  margin: auto;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
+
+#fb {
+  margin-right: 5px;
+  height: 24.78350067138672px;
+  width: 27.699207305908203px;
+}
+
+#twitter {
+  height: 24.78350067138672px;
+  width: 23.325647354125977px;
+  margin-top: 5px;
+  margin-left: 3px;
+}
+
+#ig {
+  margin-top: 4px;
+  height: 40.819881439208984px;
+  width: 26.24135398864746px;
+}
+
+#telegram {
+  margin-top: 2px;
+  margin-left: 2px;
+  height: 41px;
+  width: 41px;
+}
+
+#wa {
+  margin-top: 3px;
+  margin-left: 2px;
+  height: 34.98847198486328px;
+  width: 34.98847198486328px;
+}
+
+#email {
+  margin-top: 4px;
+  margin-left: 0.5px;
+  height: 18.952089309692383px;
+  width: 23.325647354125977px;
+}
+
+#social-media-links>div {
+  width: 41px;
+  height: 41px;
+  background-color: #323d95;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 15px;
+}
+
+/* phone portrait */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  #container {
+    background: url("../img/Website Photo Portrait.png") no-repeat;
+  }
+
+  #logo {
+    margin-top: 10vh;
+  }
+
+  h1 {
+    font-size: 30px;
+    line-height: 45px;
+    margin-top: 5vh;
+    width: fit-content;
+  }
+
+  pre {
+    width: 247px;
+    height: 10vh;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: -30px;
+  }
+
+  #contacts {
+    display: block;
+  }
+
+  #social-media-links {
+    justify-content: center;
+  }
+
+  #social-media-links>div {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  #splash img {
+    height: 30vh;
+    width: 30vh;
+    margin-top: -15vh;
+    margin-left: -15vh;
+  }
+}
+
+/* phone landscape */
+@media screen and (max-width: 900px) and (orientation: landscape) {
+
+  #logo {
+    margin-top: 0px;
+  }
+
+  h1 {
+    font-size: 28px;
+    line-height: 42px;
+    margin-top: 0px;
+    width: fit-content;
+  }
+
+  pre {
+    width: 247px;
+    height: 70px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: -30px;
+  }
+
+  #contacts {
+    display: block;
+    bottom: 0px;
+    margin: 30px auto 0px auto;
+  }
+
+  #social-media-links {
+    justify-content: center;
+  }
+
+  #social-media-links>div {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  #splash img {
+    height: 30vh;
+    width: 30vh;
+    margin-top: -15vh;
+    margin-left: -15vh;
+  }
+}
+
+/* tablet view */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #container {
+    background: url("../img/Website Photo Portrait.png") no-repeat;
+    background-size: cover;
+  }
+
+  #logo {
+    transform: scale(1.5);
+  }
+
+  h1 {
+    margin-top: 250px;
+    font-size: 60px;
+  }
+
+  pre {
+    width: 80%;
+    font-size: 24px;
+    margin-top: 0px;
+    line-height: 36px;
+  }
+
+  #contacts {
+    position: absolute;
+    bottom: 60px;
+  }
+
+  p {
+    font-size: 36px;
+  }
+
+  #social-media-links>div {
+    transform: scale(1.5);
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  h1 {
+    font-size: 48px;
+  }
+}

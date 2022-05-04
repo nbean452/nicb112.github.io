@@ -25,7 +25,8 @@ body {
     margin: auto;
 }
 
-.navbar .center, .navbar .left {
+.navbar .center,
+.navbar .left {
     width: 33%;
     justify-content: center;
     align-items: center;
@@ -63,19 +64,19 @@ a {
     height: 100vh;
     display: inline-block;
 
-    background-image: url(https://images.unsplash.com/photo-1616548321627-3c1d17305545?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1168&q=80);
-    
+    background-image: url(https://images.unsplash.com/photo-1512389142860-9c449e58a543?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80);
+
     background-size: cover;
     background-position: center center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     min-height: 100vh;
 }
 
-.topview{
-    background: linear-gradient(50deg, #4612aa, #590cca, #ad20bf, #d25ea3, #d783ad, #db95bb, #daa1c4 );
+.topview {
+    background: linear-gradient(50deg, #4612aa, #590cca, #ad20bf, #d25ea3, #d783ad, #db95bb, #daa1c4);
     background-size: 600% 600%;
     background-position: 0% 0%;
     animation: background-animation 10s ease-in-out infinite;
@@ -112,7 +113,7 @@ h1 {
     text-align: center;
 }
 
-.countdown-el span{
+.countdown-el span {
     font-size: 1.5rem;
 }
 
@@ -122,10 +123,10 @@ h1 {
     backdrop-filter: blur(10px);
     justify-content: center;
     position: absolute;
-    bottom:0;
+    bottom: 0;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;   
+    flex-direction: row;
 }
 
 .credit p {
@@ -165,14 +166,15 @@ button:hover {
 @media screen and (max-width: 800px) {
 
     .onescreen {
-        justify-content:start; 
+        justify-content: start;
     }
 
     .navbar {
         flex-wrap: wrap;
     }
 
-    .navbar .left, .navbar .right {
+    .navbar .left,
+    .navbar .right {
         width: 100%;
 
     }
@@ -190,15 +192,15 @@ button:hover {
         padding: 2vw;
     }
 
-    .big-text{
+    .big-text {
         font-size: 6vw;
     }
 
     #header-el {
         font-size: 6vw;
     }
-    
-    .credit{
+
+    .credit {
         display: none;
     }
 }

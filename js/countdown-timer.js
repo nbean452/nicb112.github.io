@@ -7,10 +7,10 @@ const header = document.getElementById("header-el");
 
 const credit = document.getElementById("photographer");
 
-const goodFriday = '15 April 2022';
-const passover = '18 April 2022';
+const firstDate = '25 December 2022';
+const secondDate = '19 June 2022';
 
-var curCount = goodFriday;
+var curCount = firstDate;
 
 function countdown() {
 
@@ -43,23 +43,23 @@ function countdown() {
 function formatTime(time) {
     return time < 10 ? ('0' + time) : time;
 }
-
+// 
 //called when the button is pressed
 function switchCount() {
-    if (header.innerHTML == "Time till Passover 2022") {
-        document.getElementsByClassName("onescreen")[0].style.backgroundImage = "url('https://images.unsplash.com/photo-1616548321627-3c1d17305545?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1168&q=80')";
+    if (header.innerHTML == "Time till Father's Day 2022") {
+        document.getElementsByClassName("onescreen")[0].style.backgroundImage = "url('https://images.unsplash.com/photo-1512389142860-9c449e58a543?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80')";
 
-        header.innerHTML = "Time till Good Friday 2022";
-        credit.innerHTML = ' Photo by <a href="https://unsplash.com/@kellysikkema?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kelly Sikkema</a> on <a href="https://unsplash.com/s/photos/good-friday?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>';
-        curCount = goodFriday;
+        header.innerHTML = "Time till Christmas 2022";
+        credit.innerHTML = ' Photo by <a href="https://unsplash.com/@anniespratt"> Annie Spratt </a>';
+        curCount = firstDate;
     } else {
-        document.getElementsByClassName("onescreen")[0].style.backgroundImage = "url('https://images.unsplash.com/photo-1556815992-e4c14fad039a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')";
-        header.innerHTML = "Time till Passover 2022";
-        credit.innerHTML = 'Photo by <a href="https://unsplash.com/@fhlcreative?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Phil Goodwin </a> on <a href="https://unsplash.com/s/photos/passover?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>';
-        curCount = passover;
+        document.getElementsByClassName("onescreen")[0].style.backgroundImage = "url('https://images.unsplash.com/photo-1612461425523-0c8f5c16beab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')";
+        header.innerHTML = "Time till Father's Day 2022";
+        credit.innerHTML = 'Photo by <a href="https://unsplash.com/@micheile"> micheile dot com </a>';
+        curCount = secondDate;
     }
-    
-    
+
+
 
     countdown();
 }

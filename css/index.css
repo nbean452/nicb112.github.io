@@ -6,7 +6,6 @@
     padding: 0;
     color: white;
     font-family: 'Readex Pro', sans-serif;
-    /* border: red 1px solid; */
 }
 
 html {
@@ -53,7 +52,7 @@ ul {
     margin: auto 0;
 }
 
-ul.middle {
+ul.styled {
     list-style-type: disc;
     display: block;
     margin: 10px auto;
@@ -74,8 +73,8 @@ iframe {
 }
 
 .project-img img {
-    width: 100%;
-    margin: 10px 0px;
+    width: 60%;
+    margin: 10px auto 60px auto;
 }
 
 .contact-container {
@@ -153,10 +152,13 @@ a:hover {
     color: white;
 }
 
-.about,
-#projects {
+.about {
     margin: 30px auto;
     width: 400px;
+}
+
+#projects>div {
+    margin: auto;
 }
 
 .about>*,
@@ -388,5 +390,10 @@ hr {
 
     .distance-top {
         margin-top: 4vh;
+    }
+
+    .project-img img {
+        width: 95%;
+        margin: 10px auto 60px auto;
     }
 }
